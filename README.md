@@ -64,3 +64,20 @@ Command helper
 
 # Demo Video Link
 https://www.youtube.com/embed/nTyU3pXkN_Q
+
+
+# Reference links
+
+serverless.yml guideline - https://www.serverless.com/framework/docs/providers/aws/guide/functions/
+
+linechatbot sample code - https://github.com/kkdai/LineBotTemplate/blob/master/main.go
+
+serverless golang examples - https://www.serverless.com/blog/framework-example-golang-lambda-support/
+
+gin gonic github - https://github.com/gin-gonic
+
+gin-lambda github - https://github.com/appleboy/gin-lambda
+
+serverless examples [very useful]  - https://github.com/serverless/examples
+
+### special thanks for @pahuddev :-) 
