@@ -28,10 +28,12 @@ deploy your serverless project
 >   POST - https://xxxxx.execute-api.us-east-2.amazonaws.com/dev/hello
 
 # Test your line chatbot in your line messager
-## supported command
+## Supported Commands
 Translating English to Traditional Chinese by AWS translate service
 > '2tw hello, I like to say hello!'
+
 Translating Tranditional Chinese to English by AWS translate service
 > '2en 你是在哈囉嗎？'
+
 Command helper
 > '@@' 
