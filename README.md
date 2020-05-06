@@ -17,13 +17,28 @@ This is a line chatbot demo code running on AWS lambda which calling AWS transla
 > export AWS_ACCESS_KEY_ID=<your access key>
 > export AWS_SECRET_ACCESS_KEY=<your secret key>
 
-# serverless command reference
-## create a serverless go project
+# Serverless framework command reference and code changes
+## Create a serverless go project
 > sls serverless create -t aws-go-dep -p go-linechatbotlambda
-deploy your serverless project
+
+## Copy the main.go to your serverless project.
+if you use serverless command to create your project, your main.go should be under /hello.  This is also what I use for this demo, and you are feel to change but require to update your serverless.yml file.
+
+In your terminal:
+1. copy the main.go file to your project by typeing "cp main.go to_your_serverless_project/hello/"
+2. compile the go binary by typeing "make" - ensure your check your Makefile. Please check my Makefile sample.
+3. fix the errors if any.  do you go get all the library you need? any typo? 
+4. if there is no error, congrats~ you are free to go next and try "sls deploy"
+
+## deploy your serverless project to your lambda function
 > sls deploy
+fix the errors if any. 
 
 ## add your enpoint url to your line developer management console
+It might take 3-5 minutes to be ready after you implement your lambda function.  In the line console, you have to update your webhook url by clicking "edit" button and test the webhook by clicking on "verify"
+
+You will see a success message in a pop window of line console.  If you don't see the success message, go to your cloudwatch log to see what happened.
+
 > endpoints:
 >   POST - https://xxxxx.execute-api.us-east-2.amazonaws.com/dev/hello
 
