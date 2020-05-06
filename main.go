@@ -7,11 +7,9 @@ import (
 	"os"
 	"strings"
 
-	"webberdev/awstranslate"
-
 	"github.com/apex/gateway"
 	"github.com/gin-gonic/gin"
-	_ "github.com/webbhlin/awstranslate"
+	"github.com/webbhlin/awstranslate"
 
 	"github.com/line/line-bot-sdk-go/linebot"
 )
