@@ -1,5 +1,5 @@
 # linechatbot-on-lambda
-This is a line chatbot running on AWS lambda
+This is a line chatbot demo code running on AWS lambda which calling AWS translate service in background.  You might be charged by AWS and please check AWS free-tier servides. You might be also charged by Line business account and please refer to Line Offical website for details.
 
 # Prerequesites
 1. need to enable your line developer account
@@ -27,3 +27,11 @@ deploy your serverless project
 > endpoints:
 >   POST - https://xxxxx.execute-api.us-east-2.amazonaws.com/dev/hello
 
+# Test your line chatbot in your line messager
+## supported command
+Translating English to Traditional Chinese by AWS translate service
+> '2tw hello, I like to say hello!'
+Translating Tranditional Chinese to English by AWS translate service
+> '2en 你是在哈囉嗎？'
+Command helper
+> '@@' 
