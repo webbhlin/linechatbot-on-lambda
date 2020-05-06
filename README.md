@@ -37,3 +37,6 @@ Translating Tranditional Chinese to English by AWS translate service
 
 Command helper
 > '@@' 
+
+# Demo Video Link
+https://www.youtube.com/embed/nTyU3pXkN_Q
