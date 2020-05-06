@@ -29,9 +29,11 @@ In your terminal:
 2. compile the go binary by typeing "make" - ensure your check your Makefile. Please check my Makefile sample.
 3. fix the errors if any.  do you go get all the library you need? any typo? 
 4. if there is no error, congrats~ you are free to go next and try "sls deploy"
+![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/makefile_sample.png "make file")
 
 ## deploy your serverless project to your lambda function
 > sls deploy
+
 fix the errors if any. 
 ![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/sls_deploy.png "sls deploy")
 
@@ -39,7 +41,12 @@ fix the errors if any.
 ## add your enpoint url to your line developer management console
 It might take 3-5 minutes to be ready after you implement your lambda function.  In the line console, you have to update your webhook url by clicking "edit" button and test the webhook by clicking on "verify"
 
+![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/webhook_line_console.png "line console")
+
+
 You will see a success message in a pop window of line console.  If you don't see the success message, go to your cloudwatch log to see what happened.
+![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/cloudwatch_log.png "cloudwatch log")
+
 
 > endpoints:
 >   POST - https://xxxxx.execute-api.us-east-2.amazonaws.com/dev/hello
