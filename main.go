@@ -9,9 +9,8 @@ import (
 
 	"github.com/apex/gateway"
 	"github.com/gin-gonic/gin"
-	"github.com/webbhlin/awstranslate"
-
 	"github.com/line/line-bot-sdk-go/linebot"
+	"github.com/webbhlin/awstranslate"
 )
 
 var bot *linebot.Client
@@ -56,7 +55,7 @@ func webhookHandler(c *gin.Context) {
 					cmd := strings.Fields(message.Text)
 					trText := strings.Join(append(cmd[1:]), " ")
 
-					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(awstranslate.TranslateTo(trText, "en", "zh-tw"))).Do()
+					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(awstranslate.TranslateTo(trText, "en", "zh-tw", "us-east-1"))).Do()
 					if err != nil {
 						log.Print(err)
 					}
@@ -64,7 +63,7 @@ func webhookHandler(c *gin.Context) {
 					cmd := strings.Fields(message.Text)
 					trText := strings.Join(append(cmd[1:]), " ")
 
-					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(awstranslate.TranslateTo(trText, "zh-tw", "en"))).Do()
+					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(awstranslate.TranslateTo(trText, "zh-tw", "en", "us-east-1"))).Do()
 					if err != nil {
 						log.Print(err)
 					}
