@@ -50,7 +50,7 @@ func webhookHandler(c *gin.Context) {
 						log.Printf("error: %v", err)
 					}
 				} else if message.Text == "@@" {
-					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("呼叫Webber, 指令: @harper, @pahud, 2tw, 2en")).Do()
+					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("AWS chatbot demo, commands: @pahuddev, 2tw, 2en")).Do()
 					if err != nil {
 						log.Printf("@@error: %v", err)
 					}
