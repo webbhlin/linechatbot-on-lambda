@@ -1,6 +1,11 @@
 # linechatbot-on-lambda
 This is a line chatbot demo code running on AWS lambda which calling AWS translate service in background.  You might be charged by AWS and please check AWS free-tier servides. You might be also charged by Line business account and please refer to Line Offical website for details.
 
+#Cloud Architecture
+![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/line%20chatbot.png" Serverless Line ChatBot")
+
+
+
 # Prerequesites
 1. need to enable your line developer account
 2. need to add your webhook url - this is your api gateway URL
