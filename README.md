@@ -33,6 +33,8 @@ In your terminal:
 ## deploy your serverless project to your lambda function
 > sls deploy
 fix the errors if any. 
+![alt text](https://github.com/webbhlin/linechatbot-on-lambda/img/sls_deploy.png "sls deploy")
+
 
 ## add your enpoint url to your line developer management console
 It might take 3-5 minutes to be ready after you implement your lambda function.  In the line console, you have to update your webhook url by clicking "edit" button and test the webhook by clicking on "verify"
