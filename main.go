@@ -7,10 +7,11 @@ import (
 	"os"
 	"strings"
 
+	"webberdev/awstranslate"
+
 	"github.com/apex/gateway"
 	"github.com/gin-gonic/gin"
-
-	"github.com/webbhlin/awstranslate"
+	_ "github.com/webbhlin/awstranslate"
 
 	"github.com/line/line-bot-sdk-go/linebot"
 )
@@ -47,11 +48,6 @@ func webhookHandler(c *gin.Context) {
 					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("我猜你你喜歡虎哥, 請看下面 - https://www.youtube.com/watch?v=ziBpmUZc9YQ&t=94s")).Do()
 					if err != nil {
 						log.Printf("error: %v", err)
-					}
-				} else if message.Text == "@harper" {
-					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewImageMessage("https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/22688032_10155910882118413_3813728506463862027_n.jpg?_nc_cat=110&_nc_sid=13bebb&_nc_ohc=t7-ni61zmoUAX_D1EuS&_nc_ht=scontent.ftpe7-1.fna&oh=5ccb33dc55239b2b16b37d2f9e0b36a5&oe=5ED326C0", "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/22688032_10155910882118413_3813728506463862027_n.jpg?_nc_cat=110&_nc_sid=13bebb&_nc_ohc=t7-ni61zmoUAX_D1EuS&_nc_ht=scontent.ftpe7-1.fna&oh=5ccb33dc55239b2b16b37d2f9e0b36a5&oe=5ED326C0")).Do()
-					if err != nil {
-						log.Print(err)
 					}
 				} else if message.Text == "@@" {
 					_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("呼叫Webber, 指令: @harper, @pahud, 2tw, 2en")).Do()
