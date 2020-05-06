@@ -13,17 +13,17 @@ This is a line chatbot running on AWS lambda
 3. aws-go-sdk
 
 # Environment Variables
-export your AWS environment variables in your bashrc or bashprofile 
+## export your AWS environment variables in your bashrc or bashprofile 
 > export AWS_ACCESS_KEY_ID=<your access key>
 > export AWS_SECRET_ACCESS_KEY=<your secret key>
 
 # serverless command reference
-create a serverless go project
+## create a serverless go project
 > sls serverless create -t aws-go-dep -p go-linechatbotlambda
 deploy your serverless project
 > sls deploy
 
-#add your enpoint url to your line developer management console
+## add your enpoint url to your line developer management console
 > endpoints:
 >   POST - https://xxxxx.execute-api.us-east-2.amazonaws.com/dev/hello
 
