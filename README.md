@@ -3,7 +3,7 @@ This is a line chatbot demo code running on AWS lambda which calling AWS transla
 
 # Cloud Architecture
 
-![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/AWSServerlesslinechatbot2.png "Serverless Line ChatBot")
+![alt text](https://github.com/webbhlin/linechatbot-on-lambda/blob/master/img/3.png "Serverless Line ChatBot")
 
 
 # Prerequesites
