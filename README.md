@@ -17,6 +17,13 @@ This is a line chatbot demo code running on AWS lambda which calling AWS transla
 2. line-bot-sdk-go
 3. aws-go-sdk
 
+## go get 
+go get -u github.com/apex/gateway
+go get -u github.com/line/line-bot-sdk-go/linebot
+go get -u github.com/gin-gonic/gin
+go get -u github.com/apex/gatway
+go get -u github.com/webbhlin/awstranslate
+
 # Environment Variables
 ## export your AWS environment variables in your bashrc or bashprofile 
 > export AWS_ACCESS_KEY_ID=<your access key>
@@ -24,7 +31,7 @@ This is a line chatbot demo code running on AWS lambda which calling AWS transla
 
 # Serverless framework command reference and code changes
 ## Create a serverless go project
-> sls serverless create -t aws-go-dep -p go-linechatbotlambda
+> serverless create -t aws-go-dep -p go-linechatbotlambda
 
 ## Copy the main.go to your serverless project.
 if you use serverless command to create your project, your main.go should be under /hello.  This is also what I use for this demo, and you are feel to change but require to update your serverless.yml file.
