@@ -24,7 +24,6 @@ This is a line chatbot demo code running on AWS lambda which calling AWS transla
 go get -u github.com/apex/gateway
 go get -u github.com/line/line-bot-sdk-go/linebot
 go get -u github.com/gin-gonic/gin
-go get -u github.com/apex/gatway
 go get -u github.com/webbhlin/awstranslate
 
 # Environment Variables
